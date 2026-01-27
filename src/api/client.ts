@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'http://localhost:8090/api/v1';
+const API_URL = 'https://ecommerce-backend-qri2.onrender.com/api/v1';
 
 export const api = axios.create({
     baseURL: API_URL,
