@@ -6,7 +6,7 @@ export const reviewApi = {
         const response = await api.post('/reviews/', data);
         return response.data;
     },
-    getByProductId: async (productId: number): Promise<Review[]> => {
+    getByProductId: async (): Promise<Review[]> => {
         // Assuming backend has an endpoint for this, typically GET /reviews/?productId=X or /products/:id with reviews
         // Based on router.go: reviews := private.Group("/reviews"); GET /:id (GetReviewByID).
         // It seems there isn't a direct "Get Reviews By Product" public endpoint in the router snippet provided earlier.

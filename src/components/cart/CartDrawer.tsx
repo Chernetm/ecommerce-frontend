@@ -162,7 +162,7 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ShoppingBag, Plus, Minus, Trash2 } from 'lucide-react';
+import { X, ShoppingBag} from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { cartApi } from '@/api/cart';
 import { CartResponse } from '@/types';
@@ -203,16 +203,7 @@ export function CartDrawer() {
     }
   };
 
-  const updateQuantity = async (productId: number, newQty: number) => {
-    if (newQty < 1) return;
-    await cartApi.update(productId, newQty);
-    loadCart();
-  };
 
-  const removeItem = async (productId: number) => {
-    await cartApi.remove(productId);
-    loadCart();
-  };
 
   const items = cart?.items ?? [];
 

@@ -7,7 +7,6 @@ import { OrdersPage } from '@/pages/Orders';
 import { Shop } from '@/pages/Shop';
 import { About } from '@/pages/About';
 import { CartDrawer } from '@/components/cart/CartDrawer';
-import { useState } from 'react';
 
 import { CheckoutPage } from '@/pages/Checkout';
 
@@ -16,7 +15,6 @@ import { RegisterPage } from '@/pages/Register';
 import { ProductDetailsPage } from '@/pages/ProductDetails';
 
 function App() {
-    const [isCartOpen, setIsCartOpen] = useState(false);
 
     return (
         <AuthProvider>

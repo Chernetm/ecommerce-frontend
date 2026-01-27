@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { Package, Truck, ShieldCheck, Users, Globe, Award } from 'lucide-react';
+import { ShieldCheck, Users, Globe, Award } from 'lucide-react';
 
 const stats = [
     { label: 'Happy Customers', value: '10k+' },
@@ -161,7 +161,7 @@ export function About() {
                     </div>
                     <div className="mx-auto mt-16 max-w-2xl sm:mt-20 lg:mt-24 lg:max-w-none">
                         <dl className="grid max-w-xl grid-cols-1 gap-x-8 gap-y-16 lg:max-w-none lg:grid-cols-4">
-                            {values.map((value, index) => (
+                            {values.map((value,_) => (
                                 <motion.div
                                     key={value.name}
                                     whileHover={{ y: -10 }}
